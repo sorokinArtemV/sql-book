@@ -1,0 +1,135 @@
+/* ==========================================================================
+   textbook.css — типографика «современного учебника»
+   Дополняет тему Claude Cream / Claude Code Orange, не заменяет её.
+   Снипет грузится после темы, поэтому !important здесь перебивает тему.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Рисунки и подписи под ними
+   Схема: строка `![[img.png]]`, следом строка `*Рис. N. Подпись.*`
+   -------------------------------------------------------------------------- */
+
+.markdown-rendered .image-embed img,
+.markdown-rendered img:not(.emoji) {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-primary);
+    padding: 0.6rem;
+}
+
+/* Абзац-картинка: чуть больше воздуха сверху, меньше снизу — подпись липнет к рисунку */
+.markdown-rendered p:has(> .image-embed) {
+    margin-top: 1.6rem !important;
+    margin-bottom: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    text-align: center;
+}
+
+/* Подпись: курсивный абзац сразу после картинки */
+.markdown-rendered p:has(> .image-embed) + p:has(> em:only-child) {
+    margin-top: 0 !important;
+    margin-bottom: 1.8rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    text-align: center;
+    font-size: 0.85em;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+.markdown-rendered p:has(> .image-embed) + p:has(> em:only-child) em {
+    font-style: normal;
+}
+
+/* То же в Live Preview: строка с эмбедом и следующая за ней строка */
+.markdown-source-view.mod-cm6 .cm-line:has(> .cm-embed-block.image-embed) + .cm-line:has(.cm-em) {
+    text-align: center;
+    font-size: 0.85em;
+    color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   2. Разделители секций
+   -------------------------------------------------------------------------- */
+
+.markdown-rendered hr {
+    border: none !important;
+    height: auto !important;
+    margin: 2.5rem auto !important;
+    text-align: center;
+    overflow: visible;
+}
+
+.markdown-rendered hr::after {
+    content: "· · ·";
+    display: block;
+    letter-spacing: 0.5em;
+    font-size: 0.9em;
+    color: var(--text-faint);
+}
+
+/* --------------------------------------------------------------------------
+   3. Заголовки: чуть более выраженная иерархия
+   -------------------------------------------------------------------------- */
+
+.markdown-rendered h2 {
+    font-size: 1.45rem !important;
+    line-height: 1.9rem !important;
+    letter-spacing: -0.01em;
+    margin-top: 2rem !important;
+}
+
+.markdown-rendered h3 {
+    font-size: 1.1rem !important;
+    color: var(--text-normal) !important;
+    margin-top: 1.75rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. Таблицы
+   -------------------------------------------------------------------------- */
+
+.markdown-rendered table {
+    border-collapse: collapse;
+    font-size: 0.92em;
+}
+
+.markdown-rendered th {
+    font-family: var(--font-interface);
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    border-bottom: 1.5px solid var(--background-modifier-border) !important;
+}
+
+.markdown-rendered td {
+    border: none !important;
+    border-bottom: 1px solid var(--background-modifier-border-hover) !important;
+}
+
+.markdown-rendered tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. Врезки-каллауты: заголовок в одну строку с содержимым не слипается
+   -------------------------------------------------------------------------- */
+
+.markdown-rendered .callout {
+    margin-top: 1.25rem !important;
+}
+
+.callout-title-inner {
+    letter-spacing: 0.03em;
+}
+
+/* Каллаут-задача читается как отдельный блок упражнения */
+.callout[data-callout="question"] {
+    --callout-color: 200, 100, 66;
+}
