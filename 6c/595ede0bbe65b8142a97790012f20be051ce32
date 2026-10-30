@@ -1,0 +1,31 @@
+.obsidian/snippets/textbook.css
+  s_cee9234170b2b7::t_ccadbdf8a59290 1-135
+.obsidian/templates.json
+  s_cee9234170b2b7::t_6175a8897282b6 1-3
+"01-Реляционная модель и окружение/1.1-Окружение.md"
+  s_cee9234170b2b7::t_1ab65056a3e18f 1-334
+"01-Реляционная модель и окружение/1.2-Реляционная модель на примере freight.md"
+  s_cee9234170b2b7::t_d8e0201a2362a2 1-281
+"01-Реляционная модель и окружение/1.3-Типы данных, которые реально нужны.md"
+  s_cee9234170b2b7::t_40c67c356c5f06 1-298
+"01-Реляционная модель и окружение/1.4-Ограничения.md"
+  s_cee9234170b2b7::t_4f1f022244dc6e 1-320
+Оглавление.md
+  s_cee9234170b2b7::t_43b943abf47893 1-202
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "6c595ede0bbe65b8142a97790012f20be051ce32",
+  "prompts": {},
+  "sessions": {
+    "s_cee9234170b2b7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "79576563-76e4-41b7-b94c-d58ac92dc197",
+        "model": "unknown"
+      },
+      "human_author": "artem.sorokin <artem.sorokin@ventionteams.com>"
+    }
+  }
+}
