@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "09d8b1fff92790f7",
+        "id": "f482ac37020109d0",
         "type": "tabs",
         "children": [
           {
-            "id": "9bb2dadb0a9e59b6",
+            "id": "10f140e7e0066574",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Реляционная модель и окружение/1.1-Окружение.md",
+                "file": "02-SELECT и логика запроса/2.1-Логический порядок выполнения SELECT.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.1-Окружение"
+              "title": "2.1-Логический порядок выполнения SELECT"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "918a032bfee0224d",
@@ -188,24 +189,41 @@
       "bases:Create new base": false
     }
   },
-  "active": "9bb2dadb0a9e59b6",
+  "active": "10f140e7e0066574",
   "lastOpenFiles": [
+    "02-SELECT и логика запроса/TODO.md",
+    "02-SELECT и логика запроса/Урок 2.5. Даты и время.md",
+    "02-SELECT и логика запроса/img/2.5-interval-fields.png",
+    "02-SELECT и логика запроса/img/2.5-day-boundary.png",
+    "02-SELECT и логика запроса/img/2.5-at-time-zone.png",
+    "02-SELECT и логика запроса/img/2.5-timestamptz-storage.png",
+    "02-SELECT и логика запроса/img/2.4-like-prefix-suffix.png",
+    "02-SELECT и логика запроса/img/2.4-cast-literal-vs-column.png",
+    "02-SELECT и логика запроса/img/2.4-case-flow.png",
+    "02-SELECT и логика запроса/img/2.3-distinct-on.png",
+    "02-SELECT и логика запроса/img/2.3-offset-cost.png",
+    "02-SELECT и логика запроса/img/2.3-pagination-ties.png",
+    "02-SELECT и логика запроса/2.5-Даты и время.md",
+    "02-SELECT и логика запроса/2.4-Выражения.md",
+    "02-SELECT и логика запроса/2.3-Форма результата.md",
+    "02-SELECT и логика запроса/2.2-NULL и трёхзначная логика.md",
+    "02-SELECT и логика запроса/2.1-Логический порядок выполнения SELECT.md",
+    "02-SELECT и логика запроса/Урок 2.4. Выражения CASE, приведение типов, LIKE и регулярные выражения.md",
+    "02-SELECT и логика запроса/Урок 2.3. Форма результата ORDER BY, LIMIT, DISTINCT.md",
+    "02-SELECT и логика запроса/Урок 2.2. NULL и трёхзначная логика.md",
+    "02-SELECT и логика запроса/Урок 2.1. Логический порядок выполнения SELECT.md",
+    "02-SELECT и логика запроса/img",
+    "Оглавление.md",
+    "02-SELECT и логика запроса",
+    "01-Реляционная модель и окружение/1.4-Ограничения.md",
+    "01-Реляционная модель и окружение/1.3-Типы данных, которые реально нужны.md",
+    "01-Реляционная модель и окружение/1.2-Реляционная модель на примере freight.md",
+    "01-Реляционная модель и окружение/1.1-Окружение.md",
     "README.md",
     "CLAUDE.md",
-    "Оглавление.md",
-    "Pasted image 20261030125036.png",
-    "Pasted image 20261030125025.png",
-    "Pasted image 20261030125014.png",
     "1/Урок 1.3. Типы данных, которые реально нужны.md",
     "Урок 1.4. Ограничения. как база защищает данные.md",
-    "Pasted image 20261030124914.png",
-    "Pasted image 20261030124845.png",
-    "Pasted image 20261030124820.png",
-    "Pasted image 20261030124809.png",
     "1/Урок 1.2. Реляционная модель на примере freight.md",
-    "Pasted image 20261030124704.png",
-    "Pasted image 20261030124645.png",
-    "Pasted image 20261030124634.png",
     "1/Глава 1. Реляционная модель и окружение.md",
     "1"
   ]
